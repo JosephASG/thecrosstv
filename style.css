@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: 'Poppins';
+  background: #121212;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: 99999;
+}
+
+.nav {
+  width: 100%;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ctn-logo {
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.ctn-logo span {
+  font-family: 'Krona One', sans-serif;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.ctn-items-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.ctn-items-nav ul li a {
+  will-change: transform;
+  transition: 0.5s cubic-bezier(.87, 0, .13, 1);
+  display: flex;
+  margin-right: 50px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Krona One', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.ctn-items-nav ul li a:before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -5px;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  transition: 0.5s cubic-bezier(.87, 0, .13, 1);
+}
+
+.ctn-items-nav ul li:hover a:before {
+  width: 0;
+  left: 0;
+  right: auto;
+  transition: 0.5s cubic-bezier(.87, 0, .13, 1);
+}
+
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
+  mix-blend-mode: exclusion;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.ctn-title {
+  width: 100%;
+}
+
+.title-hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-hero h1 {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 30vh 0 0 0;
+}
+
+.the,
+.cross {
+  width: auto;
+  font-family: 'Krona One', sans-serif;
+  font-size: 7vw;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.ecuador {
+  width: auto;
+  font-family: 'Krona One', sans-serif;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.ctn-ecuador {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.ctn-ecuador img {
+  width: 44px;
+  height: auto;
+  margin: 0 0 0 20px;
+}
+
+@media screen and (orientation: portrait) {
+  .ctn-items-nav {
+    display: none;
+  }
+
+  .the,
+  .cross {
+    font-size: 3.8rem;
+  }
+
+  .ecuador {
+    font-size: 1.1rem;
+  }
+}
